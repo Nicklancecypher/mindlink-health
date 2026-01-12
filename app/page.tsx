@@ -79,7 +79,7 @@ export default function HomePage() {
         </Link>
       </motion.div>
 
-      {/* Features / Highlights Section */}
+      {/* Features Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -106,7 +106,6 @@ export default function HomePage() {
         </div>
       </motion.div>
 
-      {/* Footer */}
       <motion.footer
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
