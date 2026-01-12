@@ -1,43 +1,87 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-purple-50 p-6">
+    <main className="min-h-screen bg-purple-50 flex flex-col items-center justify-center px-6">
+      
       {/* Hero / Logo */}
-      <div className="flex flex-col items-center space-y-4">
-        <div className="w-24 h-24 bg-black rounded-full flex items-center justify-center text-white font-bold text-3xl">
+      <motion.div
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="flex flex-col items-center space-y-4"
+      >
+        <div className="w-28 h-28 bg-black rounded-full flex items-center justify-center text-white font-bold text-4xl shadow-lg">
           ML
         </div>
-        <h1 className="text-4xl font-bold text-black text-center">
+        <h1 className="text-5xl font-bold text-black text-center">
           MindLink
         </h1>
-        <p className="max-w-lg text-center text-gray-700">
+        <p className="max-w-lg text-center text-gray-700 text-lg">
           Anonymous, pre-crisis support for students navigating stress, burnout, or emotional overload.
         </p>
-      </div>
+      </motion.div>
 
       {/* CTA Buttons */}
-      <div className="mt-10 flex flex-col space-y-4 w-full max-w-sm">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8, duration: 0.6 }}
+        className="mt-10 flex flex-col space-y-4 w-full max-w-sm"
+      >
         <Link
           href="/welcome"
-          className="bg-black text-white py-3 rounded-xl text-center hover:bg-gray-800 transition"
+          className="bg-black text-white py-3 rounded-xl text-center text-lg font-medium hover:bg-gray-800 transition"
         >
           Get Started
         </Link>
         <Link
           href="/about"
-          className="border border-black py-3 rounded-xl text-center text-black hover:bg-black hover:text-white transition"
+          className="border border-black py-3 rounded-xl text-center text-black text-lg font-medium hover:bg-black hover:text-white transition"
         >
           Learn More
         </Link>
-      </div>
+      </motion.div>
+
+      {/* Features / Highlights Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 0.6 }}
+        className="mt-20 max-w-3xl grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+      >
+        <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <h3 className="text-xl font-semibold mb-2">Anonymous</h3>
+          <p className="text-gray-600">
+            No names, no emails, no tracking. Just safe space.
+          </p>
+        </div>
+        <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <h3 className="text-xl font-semibold mb-2">AI Companion</h3>
+          <p className="text-gray-600">
+            Gentle guidance and reflection, never diagnosis.
+          </p>
+        </div>
+        <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <h3 className="text-xl font-semibold mb-2">Peer Support</h3>
+          <p className="text-gray-600">
+            Connect anonymously with others feeling the same pressures.
+          </p>
+        </div>
+      </motion.div>
 
       {/* Footer */}
-      <footer className="mt-16 text-gray-600 text-sm text-center">
+      <motion.footer
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 2, duration: 0.6 }}
+        className="mt-24 text-gray-500 text-sm text-center"
+      >
         &copy; {new Date().getFullYear()} MindLink — Privacy-first mental health support for students
-      </footer>
+      </motion.footer>
     </main>
   );
 }
