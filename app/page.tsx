@@ -31,6 +31,7 @@ export default function HomePage() {
       >
         😌
       </motion.span>
+      
       <motion.span
         className="absolute text-3xl"
         style={{ top: "70%", left: "40%" }}
