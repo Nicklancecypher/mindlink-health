@@ -17,6 +17,7 @@ export default function WelcomePage() {
         Start Check-In
       </Link>
       <p className="mt-6 text-gray-500 text-sm">
+        
         Participation is voluntary. MindLink is not a therapist or crisis service.
       </p>
     </main>
