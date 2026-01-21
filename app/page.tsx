@@ -23,6 +23,7 @@ export default function HomePage() {
       >
         😊
       </motion.span>
+      
       <motion.span
         className="absolute text-3xl"
         style={{ top: "30%", left: "70%" }}
