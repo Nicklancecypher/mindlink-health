@@ -112,6 +112,7 @@ export default function HomePage() {
       </motion.div>
 
       <motion.footer
+        
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.2, duration: 0.6 }}
