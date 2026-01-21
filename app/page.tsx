@@ -43,6 +43,7 @@ export default function HomePage() {
       </motion.span>
 
       {/* Hero / Logo */}
+      
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
