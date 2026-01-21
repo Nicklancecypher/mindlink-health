@@ -9,6 +9,7 @@ export default function WelcomePage() {
       <p className="text-gray-700 max-w-md mb-6">
         MindLink is a safe, anonymous space to share how you're really feeling.  
         No names, no judgment, no pressure.
+        
       </p>
       <Link
         href="/checkin"
