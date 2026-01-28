@@ -57,6 +57,7 @@ export default function HomePage() {
           MindLink
         </h1>
         <p className="max-w-lg text-center text-gray-700 text-lg">
+          
           Anonymous, pre-crisis support for students navigating stress, burnout, or emotional overload.
         </p>
       </motion.div>
