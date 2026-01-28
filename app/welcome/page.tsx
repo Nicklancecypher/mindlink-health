@@ -5,6 +5,7 @@ import Link from "next/link";
 export default function WelcomePage() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-purple-100 p-6 text-center">
+      
       <h1 className="text-4xl font-bold mb-4">Welcome to MindLink</h1>
       
       <p className="text-gray-700 max-w-md mb-6">
