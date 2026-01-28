@@ -100,6 +100,7 @@ export default function HomePage() {
           </p>
         </div>
         <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          
           <h3 className="text-xl font-semibold mb-2">AI Companion</h3>
           <p className="text-gray-600">
             Gentle guidance and reflection, never diagnosis.
