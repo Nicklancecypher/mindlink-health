@@ -15,6 +15,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-purple-50 flex flex-col items-center justify-center px-6 relative overflow-hidden">
       
       {/* Floating Emojis */}
+      
       <motion.span
         className="absolute text-3xl"
         style={{ top: "10%", left: "15%" }}
