@@ -124,6 +124,7 @@ export default function HomePage() {
         &copy; {new Date().getFullYear()} MindLink — Privacy-first mental health support for students
         
       </motion.footer>
+      
     </main>
   );
 }
