@@ -122,6 +122,7 @@ export default function HomePage() {
         className="mt-24 text-gray-500 text-sm text-center z-10"
       >
         &copy; {new Date().getFullYear()} MindLink — Privacy-first mental health support for students
+        
       </motion.footer>
     </main>
   );
